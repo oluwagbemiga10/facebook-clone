@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="gbenga oyelami">
+        <title>Facebook clone</title>
+        <link rel="stylesheet" href="header1.css">
+        <link rel="stylesheet" href="aside1.css">
+        <link rel="stylesheet" href="facebook.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav>
+        <div class="left-section">
+            <img src="image/logo - Copy.png" class="logo">
+        <ul>
+            <li><img src="image/notification - Copy.png"></li>
+            <li><img src="image/inbox - Copy.png"></li>
+            <li><img src="image/video.png"></li>
+        </ul>
+        </div>
+        <div class="right-section">
+            <div class="search">
+                <input type="text" placeholder="Search" class="search-box">
+                <img src="image/search.png" class="search-button">
+                </div>
+                <div class="online" onclick="settingsMenuToggle()">
+                    <img src="image/profile-pic.png" class="d-p">
+                </div>
+        </div>
+        <div class="settings-down">
+            <div id="dark-button" onclick="darkButtonOn()">
+                <span></span>
+            </div>
+            <div class="settings-inner">
+            <div class="content-user">
+                <img src="image/profile-pic.png" class="content-pic">
+                <div class="settings-username">
+                    <p>Gbenga Oyelami</p>
+                    <a href="#">See your profile</a>
+                </div>
+            </div>
+            <div class="content-user">
+                <img src="image/feedback - Copy.png" class="content-pic">
+                <div class="settings-username">
+                    <p>Give feedback</p>
+                    <a href="#">Help us to improve the new design</a>
+                </div>
+            </div>
+            <div class="settings-links">
+                <img src="image/setting.png" class="settings-icon">
+                <a href="#" class="settings-link">Settings and Privacy <img src="image/arrow - Copy.png" width="10px
+                    "></a>
+            </div>
+            <div class="settings-links">
+                <img src="image/help - Copy.png" class="settings-icon">
+                <a href="#" class="settings-link">Help and Support <img src="image/arrow - Copy.png" width="10px
+                    "></a>
+            </div>
+            <div class="settings-links">
+                <img src="image/display - Copy.png" class="settings-icon">
+                <a href="#" class="settings-link">Display and Accessibility <img src="image/arrow - Copy.png" width="10px
+                    "></a>
+            </div>
+            <div class="settings-links">
+                <img src="image/logout - Copy.png" class="settings-icon">
+                <a href="#" class="settings-link">Logout <img src="image/arrow - Copy.png" width="10px
+                    "></a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-container">
+           <div class="links">
+            <a href="#"><img src="image/news - Copy.png" class="link-img">latest News</a>
+            <a href="#"><img src="image/friends - Copy.png" class="link-img">Friends</a>
+            <a href="#"><img src="image/group - Copy.png" class="link-img">Groups</a>
+            <a href="#"><img src="image/marketplace - Copy.png" class="link-img">Marketplace</a>
+            <a href="#"><img src="image/watch.png" class="link-img">Watch</a>
+            <a href="#">See more</a>
+           </div>
+           <hr>
+           <div class="shortcuts">
+            <p>Your shortcuts</p>
+            <a href="#"><img src="image/shortcut-1.png" class="short-img">Web Developer</a>
+            <a href="#"><img src="image/shortcut-2.png" class="short-img">Web Design course</a>
+            <a href="#"><img src="image/shortcut-3.png" class="short-img">Full Stack Development</a>
+            <a href="#"><img src="image/shortcut-4.png" class="short-img">Web Experts</a>
+           </div> 
+        </div>
+        <div class="middle-container">
+            <div class="story-container">
+                <div class="story story-1">    
+                    <img src="image/upload.png" class="story-img">
+                    <p>Post story</p>
+                </div>
+                <div class="story story-2">    
+                    <img src="image/member-1 - Copy.png" class="story-img">
+                    <p>Alison</p>
+                </div>
+                <div class="story story-3">    
+                    <img src="image/member-2 - Copy.png" class="story-img">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story-4">    
+                    <img src="image/member-3 - Copy.png" class="story-img">
+                    <p>Samona</p>
+                </div>
+                <div class="story story-5">    
+                    <img src="image/member-4 - Copy.png" class="story-img">
+                    <p>John Doe</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-user">
+                    <img src="image/profile-pic.png" class="content-pic">
+                    <div>
+                        <p>Gbenga Oyelami</p>
+                        <small>Public</small>
+                    </div>
+                </div>
+                    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                <div class="content-links">
+                    <a href="#"><img src="image/live-video - Copy.png">Live Video</a>
+                    <a href="#"><img src="image/photo.png">Photo</a>
+                    <a href="#"><img src="image/feeling - Copy.png">Feeling/Activity</a>
+                </div>
+                <div class="content-user-post first">
+                    <img src="image/profile-pic.png" class="content-pic">
+                    <div class="content-post">
+                        <p>Gbenga Oyelami</p>
+                        <small>Oct. 16 2023, 19:20pm</small>
+                        <p class="content-message">Heading off to college is an exciting time for millions of recent high school graduates. College represents a new environment, new experiences, new people, and is an important step in the life of many individuals. </p>
+                        <img src="image/feed-image-1 - Copy.png" class="content-post-img">
+                        <div class="post-info">
+                            <div class="post-stat">
+                                <div><img src="image/like-blue - Copy.png">320</div>
+                                <div><img src="image/comments - Copy.png">32</div>
+                                <div><img src="image/share.png">20</div>
+                            </div>
+                            <div class="post-pic">
+                                <img src="image/profile-pic.png">
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="content-user-post">
+                    <img src="image/profile-pic.png" class="content-pic">
+                    <div class="content-post">
+                        <p>Gbenga Oyelami</p>
+                        <small>Oct. 16 2023, 19:20pm</small>
+                        <p class="content-message">Heading off to college is an exciting time for millions of recent high school graduates. College represents a new environment, new experiences, new people, and is an important step in the life of many individuals. </p>
+                        <img src="image/feed-image-2 - Copy.png" class="content-post-img">
+                        <div class="post-info">
+                            <div class="post-stat">
+                                <div><img src="image/like-blue - Copy.png">320</div>
+                                <div><img src="image/comments - Copy.png">32</div>
+                                <div><img src="image/share.png">20</div>
+                            </div>
+                            <div class="post-pic">
+                                <img src="image/profile-pic.png">
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="content-user-post">
+                    <img src="image/profile-pic.png" class="content-pic">
+                    <div class="content-post">
+                        <p>Gbenga Oyelami</p>
+                        <small>Oct. 16 2023, 19:20pm</small>
+                        <p class="content-message">Heading off to college is an exciting time for millions of recent high school graduates. College represents a new environment, new experiences, new people, and is an important step in the life of many individuals. </p>
+                        <img src="image/feed-image-3 - Copy.png" class="content-post-img">
+                        <div class="post-info">
+                            <div class="post-stat">
+                                <div><img src="image/like-blue - Copy.png">320</div>
+                                <div><img src="image/comments - Copy.png">32</div>
+                                <div><img src="image/share.png">20</div>
+                            </div>
+                            <div class="post-pic">
+                                <img src="image/profile-pic.png">
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="content-user-post">
+                    <img src="image/profile-pic.png" class="content-pic">
+                    <div class="content-post">
+                        <p>Gbenga Oyelami</p>
+                        <small>Oct. 16 2023, 19:20pm</small>
+                        <p class="content-message">Heading off to college is an exciting time for millions of recent high school graduates. College represents a new environment, new experiences, new people, and is an important step in the life of many individuals. </p>
+                        <img src="image/feed-image-4 - Copy.png" class="content-post-img">
+                        <div class="post-info">
+                            <div class="post-stat">
+                                <div><img src="image/like-blue - Copy.png">320</div>
+                                <div><img src="image/comments - Copy.png">32</div>
+                                <div><img src="image/share.png">20</div>
+                            </div>
+                            <div class="post-pic">
+                                <img src="image/profile-pic.png">
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="content-user-post">
+                    <img src="image/profile-pic.png" class="content-pic">
+                    <div class="content-post">
+                        <p>Gbenga Oyelami</p>
+                        <small>Oct. 16 2023, 19:20pm</small>
+                        <p class="content-message">Heading off to college is an exciting time for millions of recent high school graduates. College represents a new environment, new experiences, new people, and is an important step in the life of many individuals. </p>
+                        <img src="image/feed-image-5 - Copy.png" class="content-post-img">
+                        <div class="post-info">
+                            <div class="post-stat">
+                                <div><img src="image/like-blue - Copy.png">320</div>
+                                <div><img src="image/comments - Copy.png">32</div>
+                                <div><img src="image/share.png">20</div>
+                            </div>
+                            <div class="post-pic">
+                                <img src="image/profile-pic.png">
+                            </div>
+                            </div>
+                    </div>
+                </div>
+               <button class="btn">Load more</button>
+               <div class="footer">
+                <p>Copyright 2023 - Gbenga Oyelami</p>
+            </div>
+            </div>
+        
+        </div>
+        <div class="right-container">
+            <div class="right-title">
+                <h2>Events</h2>
+                <a href="#">See all</a>
+            </div>
+            <div class="event">
+            <div class="left-event">
+                <h4>18</h4>
+                <span>March</span>
+            </div>
+            <div class="right-event">
+                <h4>Social media</h4>
+                <p>willson Tech Park</p>
+                <a href="#">More info</a>
+            </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h4>22</h4>
+                    <span>june</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile marketing</h4>
+                    <p>willson Tech Park</p>
+                    <a href="#">More info</a>
+                </div>
+                </div>
+                <div class="right-title">
+                    <h2>Advertisements</h2>
+                    <a href="#">Close</a>
+                </div>
+                <img src="image/advertisement - Copy.png" class="adv-img">
+                <div class="right-title">
+                    <h2>Conversations</h2>
+                    <a href="#">Hide all</a>
+                </div>
+                <div class="chat">
+                <div class="online">
+                    <img src="image/profile-pic.png" class="chat-pic"></div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="chat">
+                <div class="online">
+                    <img src="image/profile-pic.png" class="chat-pic">
+                    </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="chat">
+                <div class="online">
+                    <img src="image/profile-pic.png" class="chat-pic"></div>
+                <p>Samona Rose</p>
+            </div>
+        </div>
+      
+    </div>
+    <script src="facebooksettingstoggle.js"></script>
+    </body>
+    </html>
